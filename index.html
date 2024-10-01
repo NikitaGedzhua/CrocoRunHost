@@ -67,6 +67,10 @@
         productName: "Bitcatcher",
         productVersion: "1.0.0",
         showBanner: unityShowBanner,
+        decompressionFallback: true,
+        asyncDownload: true,
+        devicePixelRatio: window.devicePixelRatio < 2 ? 1 : window.devicePixelRatio,
+        graphicsQuality: window.devicePixelRatio < 2 ? 0 : 1,
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
